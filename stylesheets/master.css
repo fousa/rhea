@@ -1,58 +1,31 @@
 * { margin: 0; padding: 0; font-size: medium; font-family: "Verdana"; }
 
-img.main-logo {
-  position: absolute;
-  left:50%;
-  margin: 20px auto 0 -93px;
-}
+.header { width: 800px; margin: 0 auto; }
+.header h1 { height: 70px; }
+.header a { text-decoration: none; font-size: 240%; font-weight: normal; font-variant: small-caps; color: #5B5948; }
+.header h1 img { float: left; margin: 5px; }
+.header span { font-size: 60%; color: green; display: block; margin: -7px 0 0 0; color: #C4B600; }
+.header .main-image { margin: 5px 0; }
 
-ul {
-  position:absolute;
-  top:400px;
-  left:50%;
-  width:320px;
-  height:30px;
-  margin:-60px 0 0 -160px;
-  list-style:none;
-  font:.75em "lucida grande", arial, sans-serif;
-}
+.main-page { width: 800px; margin: 0 auto; }
+h2 { font-variant: small-caps; font-size: 200%; color: #5E5B43; font-weight: normal; margin: 0 0 15px 0; }
 
-a {
-  position:absolute;
-  width:150px;
-  height:100%;
-  text-decoration:none;
-}
-a span {
-  position:absolute;
-  width:100%;
-  text-align:center;
-  line-height:30px;
-}
-li a {
-  overflow:hidden;
-  right:0;
-  color:#fff;
-}
-li + li a {
-  right: 170px;
-}
-li span {
-  -webkit-transition:top .3s ease-out;
-  -moz-transition:top .3s ease-out;
-}
-li span:first-child {
-  background:#333;
-  top:0;
-}
-li span + span {
-  background:#C4B600;
-  top:30px;
-}
-li a:hover span:first-child {
-  top:-30px;
-}
-li a:hover span + span {
-  top:0;
-}
+.aside { float: left; width: 200px; }
+.aside .nav a, .aside .nav span { width: 170px;  color: #fff; display: block; line-height: 30px; padding: 0 0 0 10px; }
+.aside .nav a { text-decoration: none; color: #C4B600; }
+.aside .nav span { background-color: #C4B600; }
+.aside .nav li { list-style-type: none; margin: 0 0 5px 0; }
 
+.last-news { margin: 20px 15px 0 0px; }
+.last-news li { list-style-type: none; margin: 0; padding: 0; line-height: 25px; font-style: italic; font-size: 70%; }
+.last-news a { text-decoration: none; color: #C4B600; font-size: 100%; }
+.last-news img { margin: 20px 50px; }
+
+.breadcrumbs { margin: 0 0 10px 0; }
+.breadcrumbs li { display: inline; color: #5B5948; }
+.breadcrumbs span, .breadcrumbs a { font-variant: small-caps; font-size: 130%; }
+.breadcrumbs a { color: #C4B600; text-decoration: none; margin: 0 5px 0 0; }
+
+.content p { line-height: 30px; color: #5B5948; font-size: 80%; margin: 0 0 20px 0; }
+
+.footer { background-color: #5B5948; color: #fff; margin: 0 0 0 200px; line-height: 30px; text-align: center; }
