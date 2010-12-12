@@ -1,0 +1,17 @@
+RewriteEngine on
+
+RewriteBase /~jelle/10to1/rhea/framework/
+
+RewriteRule ^stylesheets/.*$ - [PT]
+RewriteRule ^javascripts/.*$ - [PT]
+RewriteRule ^images/.*$      - [PT]
+
+RewriteRule ^nl/(.+)/(.+)/(.+)$  index.php?language=nl&page=$1&detail=$2&subpage=$3 [NC]
+RewriteRule ^nl/(.+)/(.+)$       index.php?language=nl&page=$1&detail=$2            [NC]
+RewriteRule ^nl/(.+)$            index.php?language=nl&page=$1                      [NC]
+RewriteRule ^nl$                 index.php?language=nl                              [NC]
+
+RewriteRule ^en/(.+)/(.+)/(.+)$  index.php?language=en&page=$1&detail=$2&subpage=$3 [NC]
+RewriteRule ^en/(.+)/(.+)$       index.php?language=en&page=$1&detail=$2            [NC]
+RewriteRule ^en/(.+)$            index.php?language=en&page=$1                      [NC]
+RewriteRule ^en$                 index.php?language=en                              [NC]
