@@ -49,9 +49,19 @@
     $output = "<li><a href='$initialURL'>rhea</a>&rarr;&nbsp;</li>";
 
     if (isset($_GET["detail"]) && $_GET["detail"] != "") {
-      $url = $initialURL . $currentPage;
+      $url = $initialURL . "/" . $currentPage;
       $name = $GLOBALS["common"]["menu"][$currentPage];
       $output .= "<li><a href='$url'>$name</a>&rarr;&nbsp;</li>";
+      if (isset($_GET["subpage"]) && $_GET["subpage"] != "") {
+        $url = $initialURL . $currentPage . "/" . $_GET["subpage"];
+        $name = $GLOBALS["common"][$currentPage][$_GET["detail"]];
+        $output .= "<li><a href='$url'>$name</a>&rarr;&nbsp;</li>";
+        $name = $GLOBALS["common"][$currentPage][$_GET["subpage"]];
+        $output .= "<li><span>$name</span></li>";
+      } else {
+        $name = $GLOBALS["common"][$currentPage][$_GET["detail"]];
+        $output .= "<li><span>$name</span></li>";
+      }
     } else {
       $name = $GLOBALS["common"]["menu"][$currentPage];
       $output .= "<li><span>$name</span></li>";

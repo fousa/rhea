@@ -10,7 +10,7 @@
     <img src="images/logo-large.gif" alt="RHEA ~ Centrum Gender &amp; Diversiteit" class="main-logo" />
     <ul>
       <li><a href="<?= $rootpath; ?>en"><span>English</span><span>Welcome</span></a></li>
-      <li><a href="nl"><span>Nederlands</span><span>Welkom</span></a></li>
+      <li><a href="<?= $rootpath; ?>nl"><span>Nederlands</span><span>Welkom</span></a></li>
     </ul>
   </body>
 </html>
