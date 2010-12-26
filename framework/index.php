@@ -21,6 +21,8 @@
       require "pages/links.inc.php";
     elseif ($currentPage == "contact")
       require "pages/contact.inc.php";
+    elseif ($currentPage == "publications")
+      require "pages/publications.inc.php";
     else
       require "pages/home.inc.php";
 
