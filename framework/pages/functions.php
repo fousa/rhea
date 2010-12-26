@@ -52,7 +52,7 @@
       $url = $initialURL . "/" . $currentPage;
       $name = $GLOBALS["common"]["menu"][$currentPage];
       $output .= "<li><a href='$url'>$name</a>&rarr;&nbsp;</li>";
-      if (isset($_GET["subpage"]) && $_GET["subpage"] != "") {
+      if (isset($_GET["subpage"]) && $_GET["subpage"] != "" && $_GET["detail"] != "courses") {
         $url = $initialURL . $currentPage . "/" . $_GET["subpage"];
         $name = $GLOBALS["common"][$currentPage][$_GET["detail"]];
         $output .= "<li><a href='$url'>$name</a>&rarr;&nbsp;</li>";

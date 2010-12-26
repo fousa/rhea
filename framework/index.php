@@ -23,6 +23,8 @@
       require "pages/contact.inc.php";
     elseif ($currentPage == "publications")
       require "pages/publications.inc.php";
+    elseif ($currentPage == "students")
+      require "pages/students.inc.php";
     else
       require "pages/home.inc.php";
 
