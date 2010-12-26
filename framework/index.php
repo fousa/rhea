@@ -15,6 +15,8 @@
     $currentPage = $_GET["page"] == "" ? "home" : $_GET["page"];
     if ($currentPage == "research")
       require "pages/research.inc.php";
+  elseif ($currentPage == "whoiswho")
+      require "pages/whoiswho.inc.php";
     else
       require "pages/home.inc.php";
 
