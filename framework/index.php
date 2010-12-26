@@ -14,7 +14,7 @@
 
     $currentPage = $_GET["page"] == "" ? "home" : $_GET["page"];
     if ($currentPage == "research")
-      echo "Not defined";
+      require "pages/research.inc.php";
     else
       require "pages/home.inc.php";
 
