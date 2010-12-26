@@ -19,6 +19,8 @@
       require "pages/whoiswho.inc.php";
     elseif ($currentPage == "links")
       require "pages/links.inc.php";
+    elseif ($currentPage == "contact")
+      require "pages/contact.inc.php";
     else
       require "pages/home.inc.php";
 
