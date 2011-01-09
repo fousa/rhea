@@ -2,13 +2,13 @@
   date_default_timezone_set("Europe/Brussels");
 
   $rootpath = "/~jelle/10to1/rhea/framework/";
-  $language = $_GET["language"];
-  $common   = parse_ini_file("config/$language/common.ini", true);
-  $news     = parse_ini_file("config/$language/news.ini", true);
-
   include_once "frameworks/markdown.php";
 
   if (isset($_GET["language"])) {
+    $language = $_GET["language"];
+    $common   = parse_ini_file("config/$language/common.ini", true);
+    $news     = parse_ini_file("config/$language/news.ini", true);
+
     require "pages/functions.php";
     require "pages/header.inc.php";
 

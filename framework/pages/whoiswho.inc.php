@@ -2,6 +2,10 @@
   $language = $GLOBALS["language"];
   $presentation = parse_ini_file("config/$language/presentation.ini", true);
   $whoiswho = parse_ini_file("config/$language/whoiswho.ini", true);
+  
+  if (isset($_GET["detail"])) {
+    require "pages/person.inc.php";
+  } else {
 ?>
 <h2><?= $presentation["whoiswho"]["title"]; ?></h2>
   
@@ -23,4 +27,4 @@
     </li>
   <? } ?>
 </ul>
- 
+<? } ?> 

@@ -1,18 +1,18 @@
-* { margin: 0; padding: 0; font-size: medium; font-family: "Verdana"; }
+* { margin: 0; padding: 0; font-size: small; font-family: "Verdana"; }
 
 .header { width: 800px; margin: 0 auto; }
-.header h1 { height: 70px; }
+.header h1 { height: 70px; padding-top: 10px; }
 .header a { text-decoration: none; font-size: 240%; font-weight: normal; font-variant: small-caps; color: #5B5948; }
-.header h1 img { float: left; margin: 5px; }
-.header span { font-size: 60%; color: green; display: block; margin: -7px 0 0 0; color: #C4B600; }
+.header h1 img { float: left; margin: 0px 5px 5px 5px; }
+.header span { font-size: 80%; color: green; display: block; margin: -7px 0 0 0; color: #C4B600; }
 .header .main-image { margin: 5px 0; }
 
 .main-page { width: 800px; margin: 0 auto; }
-h2 { font-variant: small-caps; font-size: 200%; color: #5E5B43; font-weight: normal; margin: 0 0 15px 0; }
-h3 { font-variant: small-caps; font-size: 150%; color: #5E5B43; font-weight: normal; margin: 0 0 15px 0; }
+h2 { font-variant: small-caps; font-size: 150%; color: #5E5B43; font-weight: normal; margin: 0 0 15px 0; }
+h3 { font-variant: small-caps; font-size: 120%; color: #5E5B43; font-weight: normal; margin: 0 0 15px 0; }
 
 .aside { float: left; width: 200px; }
-.aside .nav a, .aside .nav span { width: 170px;  color: #fff; display: block; line-height: 30px; padding: 0 0 0 10px; }
+.aside .nav a, .aside .nav span { width: 170px;  color: #fff; display: block; line-height: 25px; padding: 0 0 0 10px; }
 .aside .nav a { text-decoration: none; color: #C4B600; }
 .aside .nav span { background-color: #C4B600; }
 .aside .nav li { list-style-type: none; margin: 0 0 5px 0; }
@@ -20,7 +20,7 @@ h3 { font-variant: small-caps; font-size: 150%; color: #5E5B43; font-weight: nor
 .aside .nav .sub-link { margin: 0 0 0 30px; }
 
 .last-news { margin: 20px 15px 0 0px; }
-.last-news li { list-style-type: none; margin: 0 0 20px 0; padding: 0; line-height: 25px; font-style: italic; font-size: 70%; }
+.last-news li { list-style-type: none; margin: 0 0 20px 0; padding: 0; line-height: 25px; font-style: italic; font-size: 80%; color: #666; }
 .last-news a { text-decoration: none; color: #C4B600; font-size: 100%; }
 .last-news img { margin: 20px 50px; }
 
@@ -30,14 +30,14 @@ h3 { font-variant: small-caps; font-size: 150%; color: #5E5B43; font-weight: nor
 .breadcrumbs a { color: #C4B600; text-decoration: none; margin: 0 5px 0 0; }
 
 .content { margin: 0 0 0 200px; }
-.content p { line-height: 30px; color: #5B5948; font-size: 80%; margin: 0 0 20px 0; }
+.content p { line-height: 30px; color: #5B5948; font-size: 90%; margin: 0 0 20px 0; }
 .content a { text-decoration: none; color: #C4B600; font-size: 100%; }
 
 .list { margin: 0 0 15px 0; }
 .list li { list-style-type: none; }
 .list li span { font-variant: small-caps; font-size: 150%; color: #5E5B43; font-weight: normal; margin: 15px 0 15px 15px; display: block; }
 .list li li {  margin: 0 0 10px 0; display: inline-block; }
-.list li li a { line-height: 30px; padding: 8px 16px; color: #fff; }
+.list li li a { line-height: 25px; padding: 8px 16px; color: #fff; }
 .light li { background-color: #C4B600; }
 .dark li { background-color: #5B5948; }
 
@@ -49,13 +49,13 @@ h3 { font-variant: small-caps; font-size: 150%; color: #5E5B43; font-weight: nor
 .aside-left-links { float: left; margin-right: 30px; }
 
 .small-list { margin: 0 0 20px 20px; }
-.small-list li { font-size: 80%; line-height: 30px; color: #C4B600; }
+.small-list li { font-size: 90%; line-height: 30px; color: #C4B600; }
 .small-list span { color: #5B5948; font-size: 100%; }
 
 .link-list li { color: #5B5948; }
 
 .vcard { margin: 0 0 20px 0; }
-.vcard p { margin: 0; font-size: 80%; }
+.vcard p { margin: 0; font-size: 90%; }
 .vcard span { font-size: 100%; }
 
 .footer { background-color: #5B5948; color: #fff; margin: 0 0 20px 200px; line-height: 30px; text-align: center; }
