@@ -5,7 +5,7 @@
   $person = parse_ini_file("config/$language/people/" . $_GET["detail"] . ".ini", true);
   
   if (isset($_GET["detail"]) && isset($_GET["subpage"])) {
-    require "pages/" . $_GET["subpage"] . ".inc.php";
+    require "pages/person_detail.inc.php";
   } else {
 ?>
 

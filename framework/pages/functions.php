@@ -53,13 +53,23 @@
       $name = $GLOBALS["common"]["menu"][$currentPage];
       $output .= "<li><a href='$url'>$name</a>&rarr;&nbsp;</li>";
       if (isset($_GET["subpage"]) && $_GET["subpage"] != "" && $_GET["detail"] != "courses") {
-        $url = $initialURL . $currentPage . "/" . $_GET["subpage"];
-        $name = $GLOBALS["common"][$currentPage][$_GET["detail"]];
+        $url = $initialURL . "/" . $currentPage . "/" . $_GET["detail"];
+        if ($_GET["page"] == "whoiswho") {
+          $person = parse_ini_file("config/" . $GLOBALS["language"] . "/people/" . $_GET["detail"] . ".ini", true);
+          $name = $person["info"]["name"];
+        } else {
+          $name = $GLOBALS["common"][$currentPage][$_GET["detail"]];
+        }
         $output .= "<li><a href='$url'>$name</a>&rarr;&nbsp;</li>";
         $name = $GLOBALS["common"][$currentPage][$_GET["subpage"]];
         $output .= "<li><span>$name</span></li>";
       } else {
-        $name = $GLOBALS["common"][$currentPage][$_GET["detail"]];
+        if ($_GET["page"] == "whoiswho") {
+          $person = parse_ini_file("config/" . $GLOBALS["language"] . "/people/" . $_GET["detail"] . ".ini", true);
+          $name = $person["info"]["name"];
+        } else {
+          $name = $GLOBALS["common"][$currentPage][$_GET["detail"]];
+        }
         $output .= "<li><span>$name</span></li>";
       }
     } else {
