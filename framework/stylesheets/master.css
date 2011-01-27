@@ -42,16 +42,16 @@ h3 { font-variant: small-caps; font-size: 120%; color: #5E5B43; font-weight: nor
 .light li { background-color: #C4B600; }
 .dark li { background-color: #5B5948; }
 
-.aside-links { float: right; margin-left: 30px; }
-.aside-links ul { border-top: 1px solid #5B5948; background-color: #C4B600; padding: 5px 0 5px 0; z-index: 2; position: relative; top: -10px; -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; -moz-border-radius-bottomleft: 7px; -moz-border-radius-bottomright: 7px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; }
-.aside-links li { list-style-type: none; margin: 0 0 0 0; }
-.aside-links li a { width: 144px; color: #fff; line-height: 20px; padding: 4px 8px; display: inline-block;}
-.aside-left-links img, .aside-links img { vertical-align:middle; border-radius:7px; -webkit-border-radius:7px; -moz-border-radius:7px; box-shadow:0 1px 1px rgba(0,0,0,.4); -webkit-box-shadow:0 1px 1px rgba(0,0,0,.4); -moz-box-shadow:0 1px 1px rgba(0,0,0,.4); z-index: 3; }
-.aside-left-links { float: left; margin-right: 30px; }
-
 .content ul { margin: 0 0 20px 20px; }
 .content ul li { font-size: 90%; line-height: 30px; color: #C4B600; }
 .content ul span { color: #5B5948; font-size: 100%; }
+
+.aside-links { float: right; margin-left: 30px; }
+.aside-links ul { margin: 0; border-top: 1px solid #5B5948; background-color: #C4B600; padding: 5px 0 5px 0; z-index: 2; position: relative; top: -10px; -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; -moz-border-radius-bottomleft: 7px; -moz-border-radius-bottomright: 7px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; }
+.aside-links li { list-style-type: none; margin: 0; padding: 0; height: 25px; }
+.aside-links li a { width: 100%; color: #fff; padding: 2px 4px; }
+.aside-left-links img, .aside-links img { vertical-align:middle; border-radius:7px; -webkit-border-radius:7px; -moz-border-radius:7px; box-shadow:0 1px 1px rgba(0,0,0,.4); -webkit-box-shadow:0 1px 1px rgba(0,0,0,.4); -moz-box-shadow:0 1px 1px rgba(0,0,0,.4); z-index: 3; }
+.aside-left-links { float: left; margin-right: 30px; }
 
 .link-list li { color: #5B5948; }
 
