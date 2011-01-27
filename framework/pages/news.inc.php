@@ -1,25 +1,25 @@
 <? 
   $language = $GLOBALS["language"];
   $presentation = parse_ini_file("config/$language/presentation.ini", true);
-  $whoiswho = parse_ini_file("config/$language/whoiswho.ini", true);
+  $news = parse_ini_file("config/$language/news_list.ini", true);
   
   if (isset($_GET["detail"])) {
-    require "pages/person.inc.php";
+    require "pages/news_item.inc.php";
   } else {
 ?>
-<h2><?= $presentation["whoiswho"]["title"]; ?></h2>
+<h2><?= $presentation["news"]["title"]; ?></h2>
   
-<?= Markdown($presentation["whoiswho"]["content"]); ?>
+<?= Markdown($presentation["news"]["content"]); ?>
 
 <ul class="list">
   <? $color = false; ?>
-  <? foreach ($whoiswho as $key => $value) { ?>
+  <? foreach ($news as $key => $value) { ?>
     <li class="<?= (($color = !$color) ? "light" : "dark") ?>">
       <span><?= $key ?></span>
       <ul>
         <? 
           foreach ($value as $innerKey => $innerValue) { 
-            $url = $GLOBALS["rootpath"] . $_GET["language"] . "/whoiswho/" . $innerKey;
+            $url = $GLOBALS["rootpath"] . $_GET["language"] . "/news/" . $innerKey;
         ?>
           <li><a href="<?= $url ?>"><?= $innerValue ?></a></li>
         <? } ?>

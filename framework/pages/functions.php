@@ -37,7 +37,7 @@
     foreach ($list as $key=>$value) {
       $date = $value["date"];
       $text = $value["text"];
-      $url = $GLOBALS["rootpath"] . "news/" . $value["link"];
+      $url = $GLOBALS["rootpath"] . $GLOBALS["language"] . "/news/" . $value["link"];
       $output .= "<li>$date ~ $text <a href='$url'>meer&nbsp;&rarr;</a></li>";
     }
     return $output;
