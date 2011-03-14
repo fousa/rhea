@@ -12,14 +12,13 @@
   <p class="adr">
     <span class="location">Vrije Universiteit Brussel</span><br>
     <span class="location">Faculteit Rechten en Criminologie</span><br>
-    <span class="extended-address">Lokaal 4B317 (secretariaat) en 4C304</span><br>
+    <span class="extended-address">Lokaal 4B323</span><br>
     <span class="street-address">Pleinlaan 2</span><br>
     <span class="postal-code">1050</span>
     <span class="locality">Brussel</span><br> 
     <span class="country-name">België</span>
   </p>
   <p class="tel"><span class="type"><?= $contact["work-phone"] ?></span>: +32 (2) 629.14.95</p>
-  <p class="tel"><span class="type"><?= $contact["fax"] ?></span>: +32 (2) 629.14.95</p>
   <p><?= $contact["email"] ?>:<span class="email"> <a href="mailto: rhea@vub.ac.be">rhea@vub.ac.be</a></span></p>
 </div>
 
