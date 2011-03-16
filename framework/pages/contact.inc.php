@@ -27,3 +27,5 @@
 
 <h3><?= $contact["facebook"] ?></h3>
 <?= Markdown($contact["facebook-content"]) ?>
+
+<img src="../images/contact.png" alt="The Team" style="margin-left: 20px; margin-bottom: -3px;" />
