@@ -9,6 +9,6 @@
 
   <ul class="small-list">
     <? foreach ($publications as $key => $value) { ?>
-      <li><span><?= $value ?>&nbsp;<a href="<?= $key ?>">koop online&nbsp;&rarr;</a></span></li>
+      <li><span><?= $value ?></span></li>
     <? } ?>
   </ul>

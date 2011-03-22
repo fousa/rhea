@@ -27,7 +27,7 @@
       <ul>
         <? 
           foreach ($students["papers"] as $key => $value) {
-            $url = $GLOBALS["rootpath"] . $_GET["language"] . "/whoiswho/" . $key . "/papers";
+            $url = $GLOBALS["rootpath"] . $_GET["language"] . "/whoiswho/" . $key;
         ?>
             <li><a href="<?= $url ?>"><?= $value ?></a></li>
         <? } ?>

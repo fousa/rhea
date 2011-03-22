@@ -23,13 +23,21 @@
 	</div> 
 	<div class="vcard"> 
 		<p class="adr"> 
-		<span class="location"><?= $person["info"]["facility"] ?></span><br /> 
-		<span class="street-address"><?= $person["info"]["address"] ?></span><br /> 
+		<? if ($person["info"]["facility"]) { ?>
+			<span class="location"><?= $person["info"]["facility"] ?></span><br /> 
+		<? } ?>
+		<? if ($person["info"]["address"]) { ?>
+			<span class="street-address"><?= $person["info"]["address"] ?></span><br /> 
+		<? } ?>
 		<span class="locality"><?= $person["info"]["city"] ?></span><br /> 
 		<span class="country-name"><?= $person["info"]["country"] ?></span> 
 		</p> 
-		<p class="tel"><span class="type"><?= $presentation["whoiswho"]["work"] ?></span>: <?= $person["info"]["work_phone"] ?></p> 
-		<p><?= $presentation["whoiswho"]["email"] ?>:<span class="email"> <a href="mailto: <?= $person["info"]["email"] ?>"><?= $person["info"]["email"] ?></a></span></p> 
+		<? if ($person["info"]["work_phone"]) { ?>
+			<p class="tel"><span class="type"><?= $presentation["whoiswho"]["work"] ?></span>: <?= $person["info"]["work_phone"] ?></p> 
+		<? } ?>
+		<? if ($person["info"]["email"]) { ?>
+			<p><?= $presentation["whoiswho"]["email"] ?>:<span class="email"> <a href="mailto: <?= $person["info"]["email"] ?>"><?= $person["info"]["email"] ?></a></span></p> 
+		<? } ?>
 	<? if ($person["info"]["website"]) { ?>
 		<p><?= $presentation["whoiswho"]["website"] ?>:<span class="website"> <a href="<?= $person["info"]["website"] ?>">link</a></span></p> 
 	<? } ?>

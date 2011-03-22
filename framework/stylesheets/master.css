@@ -30,7 +30,7 @@ h3 { font-variant: small-caps; font-size: 120%; color: #5E5B43; font-weight: nor
 .breadcrumbs a { color: #C4B600; text-decoration: none; margin: 0 5px 0 0; }
 
 .content { margin: 0 0 0 200px; }
-.content p { line-height: 30px; color: #5B5948; font-size: 90%; margin: 0 0 20px 0; }
+.content p { text-align: justify; line-height: 30px; color: #5B5948; font-size: 90%; margin: 0 0 20px 0; }
 .content a { text-decoration: none; color: #C4B600; font-size: 100%; }
 
 .list { margin: 0 0 15px 0; }

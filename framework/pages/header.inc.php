@@ -14,7 +14,9 @@
           RHEA<span><?= $common["text"]["main_title"]; ?></span>
         </a>
       </h1>
-      <img src="<?= $rootpath; ?>images/main.png" alt="The RHEA Team" class="main-image" />
+			<a href="<?= $rootpath; ?>nl/activities/tweespraak" style="border: none">
+				<img src="<?= $rootpath; ?>images/main.png" alt="The RHEA Team" class="main-image" />
+			</a>
     </div>
     <div class="main-page">
       <div class="aside">
